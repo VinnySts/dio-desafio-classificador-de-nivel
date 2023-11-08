@@ -5,10 +5,10 @@ const saudacao = "Welcome to your new adventure, "
 console.log("[User Resgistered]")
 console.log(saudacao + nickname + ". ")
 
-let lvl = 0
-console.log("Your current XP is: " + lvl)
+let xp = 0
+console.log("Your current XP is: " + xp)
 
-let xp = [
+let lvl = [
     "Iron", 
     "Bronze", 
     "Silver", 
@@ -20,22 +20,22 @@ let xp = [
 
 let levelText; 
 
-if (lvl <= 1000){
-    levelText = xp[0]
-;}else if(lvl <= 2000){
-    levelText = xp[1]
-;}else if(lvl <= 5000){
-    levelText = xp[2]
-;}else if(lvl <=7000){
-    levelText = xp[3]
-;}else if(lvl <= 8000){
-    levelText = xp[4]
-;}else if(lvl <= 9000){
-    levelText = xp[5]
-;}else if(lvl <= 10000){
-    levelText = xp[6]
-;}else if(lvl >= 10001){
-    levelText = xp[7]
+if (xp <= 1000){
+    levelText = lvl[0]
+;}else if(xp <= 2000){
+    levelText = lvl[1]
+;}else if(xp <= 5000){
+    levelText = lvl[2]
+;}else if(xp <=7000){
+    levelText = lvl[3]
+;}else if(xp <= 8000){
+    levelText = lvl[4]
+;}else if(xp <= 9000){
+    levelText = lvl[5]
+;}else if(xp <= 10000){
+    levelText = lvl[6]
+;}else if(xp >= 10001){
+    levelText = lvl[7]
 ;}
 
 console.log("Status: The hero named " + nickname + ", is at level " + levelText);
